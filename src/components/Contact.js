@@ -23,7 +23,7 @@ const ContactForm = () => {
     e.target.reset();
   }
   return (
-    <div class="container">
+    <div className="container">
       <form onSubmit={handleSubmit}>
         <div>
           <label>Subject</label>
