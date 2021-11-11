@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/logan-grp/static/css/main.659a2515.chunk.css",
-    "main.js": "/logan-grp/static/js/main.bffff9a1.chunk.js",
-    "main.js.map": "/logan-grp/static/js/main.bffff9a1.chunk.js.map",
-    "runtime-main.js": "/logan-grp/static/js/runtime-main.38a65ef1.js",
-    "runtime-main.js.map": "/logan-grp/static/js/runtime-main.38a65ef1.js.map",
-    "static/js/2.5bae9019.chunk.js": "/logan-grp/static/js/2.5bae9019.chunk.js",
-    "static/js/2.5bae9019.chunk.js.map": "/logan-grp/static/js/2.5bae9019.chunk.js.map",
-    "index.html": "/logan-grp/index.html",
-    "static/css/main.659a2515.chunk.css.map": "/logan-grp/static/css/main.659a2515.chunk.css.map",
-    "static/js/2.5bae9019.chunk.js.LICENSE.txt": "/logan-grp/static/js/2.5bae9019.chunk.js.LICENSE.txt"
+    "main.css": "/logan-group/static/css/main.659a2515.chunk.css",
+    "main.js": "/logan-group/static/js/main.bffff9a1.chunk.js",
+    "main.js.map": "/logan-group/static/js/main.bffff9a1.chunk.js.map",
+    "runtime-main.js": "/logan-group/static/js/runtime-main.72e6a118.js",
+    "runtime-main.js.map": "/logan-group/static/js/runtime-main.72e6a118.js.map",
+    "static/js/2.5bae9019.chunk.js": "/logan-group/static/js/2.5bae9019.chunk.js",
+    "static/js/2.5bae9019.chunk.js.map": "/logan-group/static/js/2.5bae9019.chunk.js.map",
+    "index.html": "/logan-group/index.html",
+    "static/css/main.659a2515.chunk.css.map": "/logan-group/static/css/main.659a2515.chunk.css.map",
+    "static/js/2.5bae9019.chunk.js.LICENSE.txt": "/logan-group/static/js/2.5bae9019.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.38a65ef1.js",
+    "static/js/runtime-main.72e6a118.js",
     "static/js/2.5bae9019.chunk.js",
     "static/css/main.659a2515.chunk.css",
     "static/js/main.bffff9a1.chunk.js"
