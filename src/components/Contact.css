@@ -35,3 +35,8 @@ input[type=text], select, textarea {
     font-size:12px;
     color:red;
   }
+  
+  .required-good{
+    font-size: 12px;
+    color:#04AA6D
+  }
