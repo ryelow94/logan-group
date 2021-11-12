@@ -55,7 +55,8 @@ function ContactForm() {
   });
   return (
     <div className="container">
-      <form ref={form} onSubmit={formik.handleSubmit}>
+      <h1 className="contact-header"> Contact Us</h1>
+      <form className="form" ref={form} onSubmit={formik.handleSubmit}>
         <div>
         {formik.errors.subject ? <div className="required-field">{formik.errors.subject}</div> : null}
           <label htmlFor="subject">Subject </label>
@@ -74,7 +75,7 @@ function ContactForm() {
           <label>Email </label>
           <input type="text" id="email" name="email" value={formik.values.email} onChange={formik.handleChange}/>
           <label>Phone</label>
-          <input type="text" id="phone" name="phone" value={formik.values.phone} onChange={formik.handleChange}/>
+          <input type="text" placeholder="1 (111) 111-1111" id="phone" name="phone" value={formik.values.phone} onChange={formik.handleChange}/>
           {formik.errors.message ? <div className="required-field">{formik.errors.message}</div> : null}
           <label>Message </label>
           <textarea type="text" id="message" name="message" value={formik.values.message} onChange={formik.handleChange} />
