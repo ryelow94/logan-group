@@ -1,33 +1,36 @@
 import React, { Component } from "react";
 import { ServiceItems } from "./ServiceItem";
 import "./Services.css";
-import { Link } from "react-router-dom";
 import { Faq } from "./Tsafaq";
+import { useState} from "react"
 
-class Services extends Component {
-  state = { clicked: false };
-  handleClick = () => {
-    this.setState({ clicked: !this.state.clicked });
+const Services = () => {
+  const [faqClicked, setFaqClicked]= useState(false)
+  const handleClick = () => {
+    if(faqClicked===false){
+      setFaqClicked(true)
+    } else if(faqClicked===true){
+      setFaqClicked(false)
+    }
   };
-  render() {
     return (
       <div>
         <h1>Services</h1>
-        <container className="card">
+        <div className="card">
           {ServiceItems.map((item, index) => {
             return (
-              <div className={item.cName}>
+              <div key={index} className={item.cName}>
                 <h4> {item.title}</h4>
                 <h5>{item.description}</h5>
                 {item.tsafaq ? (
                   <div>
-                    <button className="faq-button" onClick={this.handleClick}>{item.tsafaq}</button>
-                    {this.state.clicked ? (
+                    <button className="faq-button" onClick={handleClick}>{item.tsafaq}</button>
+                    {faqClicked ? (
                       <div>
                         <h5>
                           {Faq.map((item, index) => {
                             return (
-                              <div className="faq">
+                              <div key={index} className="faq">
                                 <p>{item.Q}</p>
                                 <br></br>
                                 <p>{item.A}</p>
@@ -43,10 +46,9 @@ class Services extends Component {
               </div>
             );
           })}
-        </container>
+        </div>
       </div>
     );
-  }
 }
 
 export default Services;
