@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { ServiceItems } from "./ServiceItem";
 import "./Services.css";
 import { Faq } from "./Tsafaq";
@@ -6,6 +6,7 @@ import { useState} from "react"
 
 const Services = () => {
   const [faqClicked, setFaqClicked]= useState(false)
+  const [showFaq, setShowFaq]= useState(false)
   const handleClick = () => {
     if(faqClicked===false){
       setFaqClicked(true)
@@ -13,18 +14,28 @@ const Services = () => {
       setFaqClicked(false)
     }
   };
+  const handleServiceClick = (e) =>{
+    console.log(ServiceItems)
+    if(ServiceItems[0]){
+      setShowFaq(true)
+    } 
+    if(ServiceItems[0]&& showFaq===true){
+      setShowFaq(false)
+    }
+
+  }
     return (
       <div>
-        <h1>Services</h1>
+        <h1 id="services-header">Services</h1>
         <div className="card">
           {ServiceItems.map((item, index) => {
             return (
               <div key={index} className={item.cName}>
-                <h4> {item.title}</h4>
+                <h4 onClick={handleServiceClick}> {item.title}</h4>
                 <h5>{item.description}</h5>
                 {item.tsafaq ? (
                   <div>
-                    <button className="faq-button" onClick={handleClick}>{item.tsafaq}</button>
+                    <button style={{display:showFaq?"block": "none"}} className="faq-button" onClick={handleClick}>{item.tsafaq}</button>
                     {faqClicked ? (
                       <div>
                         <h5>
