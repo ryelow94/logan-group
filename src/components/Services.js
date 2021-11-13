@@ -14,12 +14,12 @@ const Services = () => {
       setFaqClicked(false)
     }
   };
-  const handleServiceClick = (e) =>{
-    console.log(ServiceItems)
-    if(ServiceItems[0]){
+  const handleServiceClick = (e) => {
+    console.log(e.target.id)
+    if(e.target.id === "retire"){
       setShowFaq(true)
     } 
-    if(ServiceItems[0]&& showFaq===true){
+    if(e.target.id === "retire" && showFaq===true){
       setShowFaq(false)
     }
 
@@ -28,10 +28,10 @@ const Services = () => {
       <div>
         <h1 id="services-header">Services</h1>
         <div className="card">
-          {ServiceItems.map((item, index) => {
+          {ServiceItems.map((item, index, id) => {
             return (
               <div key={index} className={item.cName}>
-                <h4 onClick={handleServiceClick}> {item.title}</h4>
+                <h4 id={item.id} onClick={(e)=> handleServiceClick(e)}> {item.title}</h4>
                 <h5>{item.description}</h5>
                 {item.tsafaq ? (
                   <div>
