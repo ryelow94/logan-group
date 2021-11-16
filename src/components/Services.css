@@ -12,6 +12,7 @@
 }
 .service-item{
   text-align:center;
+  cursor: pointer;
 }
 .description-div{
   display:flex;
