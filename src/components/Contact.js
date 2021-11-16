@@ -2,7 +2,9 @@ import React from "react";
 import emailjs from "emailjs-com";
 import "./Contact.css";
 import { useFormik } from "formik";
+import Calendar from "./Calendar"
 import { useRef } from "react";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
 const validate = (values) => {
   const errors = {};
@@ -84,6 +86,14 @@ function ContactForm() {
           <input type="submit" onclick={formik.handleClick} />
         </div>
       </form>
+      <Router>
+      <h5> Click <Link to ="/calendar"> here </Link> to schedule an appointment online</h5>
+      <Switch>
+          <Route exact path="/calendar">
+            <Calendar />
+          </Route>
+          </Switch>
+      </Router>
     </div>
   );
 }

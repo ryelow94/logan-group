@@ -8,7 +8,7 @@ export const ServiceItems = [
     },
     {
         title:"CalSTRS/PRS Pension Planning",
-        description2:"Here is where a description will go. a;dsjfkasdfajsdf;kasjdfkla;sjdf;kasdjf;klasdjf;kasdfjkl;asdjfkl;asdjf;kasdjfk;asdjf;alksdfj;askdfj;asdklfj;asdlfkjasdf;klasdfj;asdfk;ajsdf;laksdfjl;asdfk;jasdf;alsdfjla;sdfkla;sdf;aklsdjkl;asd;lkasdlkjasdf;jasd;lkjasd;asdfjlkasdfl;ksadfjsdf;sadjkasdffjkl;fsd;sdklsdfklsdklsdlkdsfkjlsdjalkljdsfkjlsdfklsadfkljsdakjlskdakljfsdklsaklj;sdfkjlsdklajdskklsdfkjldfs;kjlfdsakjl;sdakljfsdjkl",
+        description2:"Here is where a description will go. The logan group Securities specializes in helping educators make the most of their STRS/PRS pension benefits through a combination of investing strategies. Etc Etc Etc Etc blah blah blah blah",
         cName:"service-item",
         id:"pension"
     },
