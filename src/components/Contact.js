@@ -86,8 +86,9 @@ function ContactForm() {
           <input type="submit" onclick={formik.handleClick} />
         </div>
       </form>
+      <br></br>
       <Router>
-      <h5> Click <Link to ="/calendar"> here </Link> to schedule an appointment online</h5>
+      <h5> Instead of waiting for an email response, you can view our calendar and schedule an appointment now by clicking<Link to ="/calendar"> here </Link> </h5>
       <Switch>
           <Route exact path="/calendar">
             <Calendar />
