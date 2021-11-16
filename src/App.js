@@ -5,6 +5,7 @@ import Services from "./components/Services"
 import Contact from "./components/Contact";
 import Footer from "./components/Footer"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Calendar from "./components/Calendar";
 
 const App = () => {
   return (
@@ -14,9 +15,12 @@ const App = () => {
         <Switch>
           <Route exact path="/services">
             <Services/>
-            </Route>
+          </Route>
           <Route exact path="/contact">
             <Contact />
+          </Route>
+          <Route exact path="/calendar">
+            <Calendar />
           </Route>
         </Switch>
       </main>
