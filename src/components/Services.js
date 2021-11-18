@@ -7,10 +7,10 @@ import { useState } from "react";
 const Services = () => {
   const [faqClicked, setFaqClicked] = useState(false);
   const [showFaq, setShowFaq] = useState(false);
-  const [showDescripion1, setShowDescripion1] = useState(false);
-  const [showDescripion2, setShowDescripion2] = useState(false);
-  const [showDescripion3, setShowDescripion3] = useState(false);
-  const [showDescripion4, setShowDescripion4] = useState(false);
+  const [showDescription1, setShowDescription1] = useState(false);
+  const [showDescription2, setShowDescription2] = useState(false);
+  const [showDescription3, setShowDescription3] = useState(false);
+  const [showDescription4, setShowDescription4] = useState(false);
   const handleFaq = () => {
     if (faqClicked === false) {
       setFaqClicked(true);
@@ -22,31 +22,46 @@ const Services = () => {
     console.log(e.target);
     if (e.target.id === "retire") {
       setShowFaq(true);
-      setShowDescripion1(true);
+      setShowDescription1(true);
+      setShowDescription2(false);
+      setShowDescription3(false);
+      setShowDescription4(false);
     }
     if (e.target.id === "retire" && showFaq === true) {
       setShowFaq(false);
     }
-    if (e.target.id === "retire" && showDescripion1 === true) {
-      setShowDescripion1(false);
+    if (e.target.id === "retire" && showDescription1 === true) {
+      setShowDescription1(false);
     }
     if (e.target.id === "pension") {
-      setShowDescripion2(true);
+      setShowFaq(false);
+      setShowDescription1(false);
+      setShowDescription2(true);
+      setShowDescription3(false);
+      setShowDescription4(false);
     }
-    if (e.target.id === "pension" && showDescripion2 === true) {
-      setShowDescripion2(false);
+    if (e.target.id === "pension" && showDescription2 === true) {
+      setShowDescription2(false);
     }
     if (e.target.id === "college") {
-      setShowDescripion3(true);
+      setShowFaq(false);
+      setShowDescription1(false);
+      setShowDescription2(false);
+      setShowDescription3(true);
+      setShowDescription4(false);
     }
-    if (e.target.id === "college" && showDescripion3 === true) {
-      setShowDescripion3(false);
+    if (e.target.id === "college" && showDescription3 === true) {
+      setShowDescription3(false);
     }
     if (e.target.id === "estate") {
-      setShowDescripion4(true);
+      setShowFaq(false);
+      setShowDescription1(false);
+      setShowDescription2(false);
+      setShowDescription3(false);
+      setShowDescription4(true);
     }
-    if (e.target.id === "estate" && showDescripion4 === true) {
-      setShowDescripion4(false);
+    if (e.target.id === "estate" && showDescription4 === true) {
+      setShowDescription4(false);
     }
   };
   return (
@@ -60,10 +75,10 @@ const Services = () => {
                 {item.title}
               </h4>
               <div className="description-div">
-                {showDescripion1 ?<h5 className="descripion"> {item.description1}</h5> : null}
-                {showDescripion2 ?<h5 className="descripion"> {item.description2}</h5>: null}
-                {showDescripion3 ?<h5 className="descripion"> {item.description3}</h5> : null}
-                {showDescripion4 ?<h5 className="descripion"> {item.description4}</h5>: null}
+                {showDescription1 ?<h5 className="description"> {item.description1}</h5> : null}
+                {showDescription2 ?<h5 className="description"> {item.description2}</h5>: null}
+                {showDescription3 ?<h5 className="description"> {item.description3}</h5> : null}
+                {showDescription4 ?<h5 className="description"> {item.description4}</h5>: null}
                 </div>
                 {item.tsafaq ? (
                   <div>
