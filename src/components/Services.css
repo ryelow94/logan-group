@@ -8,7 +8,7 @@
   align-items:center;
   justify-content:space-around;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 .service-item{
   text-align:center;
