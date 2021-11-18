@@ -20,8 +20,8 @@ const Footer = () => (
             <br></br>
             <a className="footer-link" href={item.privacyNotice}>
               We respect your Privacy
-            </a>
-          </div>
+            </a> 
+          </div> 
         );
       })}
       <br></br>
