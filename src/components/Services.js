@@ -57,6 +57,10 @@ const Services = () => {
     }
     if (e.target.id === "retire" && showDescription1 === true) {
       setShowDescription1(false);
+      setShowDesTitle2(true)
+      setShowDesTitle3(true)
+      setShowDesTitle4(true)
+      isBack(false)
     }
     if (e.target.id === "pension") {
       setShowFaq(false);
@@ -70,6 +74,10 @@ const Services = () => {
     }
     if (e.target.id === "pension" && showDescription2 === true) {
       setShowDescription2(false);
+      setShowDesTitle1(true)
+      setShowDesTitle3(true)
+      setShowDesTitle4(true)
+      isBack(false)
     }
     if (e.target.id === "college") {
       setShowFaq(false);
@@ -83,6 +91,10 @@ const Services = () => {
     }
     if (e.target.id === "college" && showDescription3 === true) {
       setShowDescription3(false);
+      setShowDesTitle1(true)
+      setShowDesTitle2(true)
+      setShowDesTitle4(true)
+      isBack(false)
     }
     if (e.target.id === "estate") {
       setShowFaq(false);
@@ -96,6 +108,10 @@ const Services = () => {
     }
     if (e.target.id === "estate" && showDescription4 === true) {
       setShowDescription4(false);
+      setShowDesTitle1(true)
+      setShowDesTitle2(true)
+      setShowDesTitle3(true)
+      isBack(false)
     }
   };
   return (
