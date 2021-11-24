@@ -9,29 +9,37 @@ import {
   ButtonNext,
 } from "pure-react-carousel";
 
-import 'pure-react-carousel/dist/react-carousel.es.css';
+ import "pure-react-carousel/dist/react-carousel.es.css";
 
 const About = () => {
   return (
     <div>
       <h1>About Us</h1>
-        {aboutItems.map((item,i) => {
-          return (
-            <CarouselProvider
-        naturalSlideWidth={20}
-        naturalSlideHeight={20}
-        totalSlides={3}
-      >
+      <div>
+        <CarouselProvider
+          naturalSlideWidth={100}
+          naturalSlideHeight={125}
+          isIntrinsicHeight={true}
+          totalSlides={2}
+        >
             <Slider>
-          <Slide index={item[i]}>{item.aboutDesc}.</Slide>
-          <Slide >I am the second Slide.</Slide>
-          <Slide >I am the third Slide.</Slide>
-        </Slider>
-        <ButtonBack>Back</ButtonBack>
-        <ButtonNext>Next</ButtonNext>
+              {aboutItems.map((item, i) => {
+                return (
+                  <Slide key={i} index={i}>
+                    <div className="slide-content">
+                      <img className="about-img" src={item.aboutImg}></img>
+                      <h3>{item.aboutName}</h3>
+                      <h4>{item.aboutTitle}</h4>
+                      <div>{item.aboutDesc}</div>
+                      <ButtonBack>Back</ButtonBack>
+                      <ButtonNext>Next</ButtonNext>
+                    </div>
+                  </Slide>
+                );
+              })}
+            </Slider>
         </CarouselProvider>
-          )
-        })}
+      </div>
     </div>
   );
 };

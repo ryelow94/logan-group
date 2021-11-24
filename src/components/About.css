@@ -1,0 +1,26 @@
+
+  .carousel__ {
+      
+  }
+  .carousel__slider{
+    
+  }
+ 
+  .carousel__inner-slide {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+   
+  }
+
+.slide-content {
+  
+}
+
+
+.about-img {
+  width: 500px;
+  height: 500px;
+}
