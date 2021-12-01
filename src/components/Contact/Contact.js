@@ -2,7 +2,7 @@ import React from "react";
 import emailjs from "emailjs-com";
 import "./Contact.css";
 import { useFormik } from "formik";
-import Calendar from "./Calendar"
+import Calendar from "../Calendar/Calendar"
 import { useRef } from "react";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
