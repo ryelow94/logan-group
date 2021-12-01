@@ -36,6 +36,7 @@
     height: 2rem;
     margin: 15px;
     padding: 10px;
+    border-radius: 50%;
   }
 
   .carousel__dot--selected {
@@ -43,6 +44,7 @@
     height: 2rem;
     margin: 15px;
     padding: 10px;
+    border-radius: 50%;
     background-color:gray;
   }
 
