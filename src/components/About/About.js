@@ -15,7 +15,7 @@ import {
 const About = () => {
   return (
     <div>
-      <h1>About Us</h1>
+      <h1 style={{textAlign:"center"}}>About Us</h1>
       <div>
         <CarouselProvider
           naturalSlideWidth={100}
