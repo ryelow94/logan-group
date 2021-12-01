@@ -27,12 +27,14 @@ const About = () => {
                 return (
                   <Slide key={i} index={i}>
                     <div className="slide-content">
-                      <img className="about-img" src={item.aboutImg}></img>
+                      <img className="about-img" alt="about-img" src={item.aboutImg}></img>
                       <h3>{item.aboutName}</h3>
                       <h4>{item.aboutTitle}</h4>
-                      <div>{item.aboutDesc}</div>
+                      <div>{item.aboutDesc}</div> 
+                      <div className="button-div">
                       <ButtonBack>Back</ButtonBack>
                       <ButtonNext>Next</ButtonNext>
+                      </div>
                     </div>
                   </Slide>
                 );

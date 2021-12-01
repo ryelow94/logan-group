@@ -1,11 +1,4 @@
 
-  .carousel__ {
-      
-  }
-  .carousel__slider{
-    
-  }
- 
   .carousel__inner-slide {
     display: flex;
     justify-content: flex-start;
@@ -13,14 +6,23 @@
     flex-direction: column;
     margin-top: 1rem;
    
+  } 
+
+  .carousel__back-button{
+     
+  } 
+
+  .carousel__next-button {
+    
   }
-
-.slide-content {
-  
-}
-
 
 .about-img {
   width: 500px;
   height: 500px;
+} 
+@media screen and (max-width: 960px) {
+    .about-img{
+        width: 250px;
+        height: 250px;
+    }
 }
