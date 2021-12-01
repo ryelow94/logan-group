@@ -38,6 +38,14 @@
     padding: 10px;
   }
 
+  .carousel__dot--selected {
+    width: 2rem;
+    height: 2rem;
+    margin: 15px;
+    padding: 10px;
+    background-color:gray;
+  }
+
 .about-img {
   width: 500px;
   height: 500px;
