@@ -8,12 +8,33 @@
    
   } 
 
+  @media screen and (min-width:960px) {
   .carousel__back-button{
-     
+     margin-right: 150px;
+     height: 2rem;
+     width: 2rem;
   } 
-
   .carousel__next-button {
-    
+    margin-left: 150px;
+    height: 2rem;
+    width: 2rem;
+  } 
+} 
+
+.carousel__back-button{
+  height: 2rem;
+    width: 2rem;
+} 
+.carousel__next-button {
+  height: 2rem;
+  width: 2rem;
+} 
+
+  .carousel__dot {
+    width: 2rem;
+    height: 2rem;
+    margin: 15px;
+    padding: 10px;
   }
 
 .about-img {

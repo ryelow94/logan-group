@@ -24,5 +24,18 @@ export const aboutItems = [
             }
         ],
         aboutId: "Grant"
+    },
+    {
+        aboutImg: "https://www.akc.org/wp-content/uploads/2018/01/cute-puppy-body-image.jpg",
+        aboutName:"Joseph Palatnik",
+        aboutTitle: "Administrative Assistant",
+        aboutDesc: "Hello again again",
+        aboutContact: [
+            {
+                email: "",
+                phone: "",
+            }
+        ],
+        aboutId: "Joseph"
     }
 ]

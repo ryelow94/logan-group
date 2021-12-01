@@ -5,6 +5,7 @@ import {
   CarouselProvider,
   Slider,
   Slide,
+  DotGroup,
   ButtonBack,
   ButtonNext,
 } from "pure-react-carousel";
@@ -20,7 +21,7 @@ const About = () => {
           naturalSlideWidth={100}
           naturalSlideHeight={125}
           isIntrinsicHeight={true}
-          totalSlides={2}
+          totalSlides={3}
         >
             <Slider>
               {aboutItems.map((item, i) => {
@@ -32,8 +33,9 @@ const About = () => {
                       <h4>{item.aboutTitle}</h4>
                       <div>{item.aboutDesc}</div> 
                       <div className="button-div">
-                      <ButtonBack>Back</ButtonBack>
-                      <ButtonNext>Next</ButtonNext>
+                      <ButtonBack className="fas fa-angle-left"></ButtonBack>
+                      <DotGroup/>
+                      <ButtonNext className="fas fa-angle-right"></ButtonNext>
                       </div>
                     </div>
                   </Slide>
