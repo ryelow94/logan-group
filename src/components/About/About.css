@@ -26,11 +26,13 @@
   height: 2rem;
     width: 2rem;
     border-radius: 50%;
+    border-color: transparent
 } 
 .carousel__next-button {
   height: 2rem;
   width: 2rem;
   border-radius: 50%;
+  border-color: transparent
 } 
 
   .carousel__dot {
