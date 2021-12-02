@@ -25,10 +25,12 @@
 .carousel__back-button{
   height: 2rem;
     width: 2rem;
+    border-radius: 50%;
 } 
 .carousel__next-button {
   height: 2rem;
   width: 2rem;
+  border-radius: 50%;
 } 
 
   .carousel__dot {
@@ -37,6 +39,7 @@
     margin: 15px;
     padding: 10px;
     border-radius: 50%;
+    border-color: transparent;
   }
 
   .carousel__dot--selected {
