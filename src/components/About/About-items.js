@@ -27,6 +27,19 @@ export const aboutItems = [
     },
     {
         aboutImg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPuaXCGM6j0prMgZ41hMkH0hAnKA_6Qzq06w&usqp=CAU",
+        aboutName:"Nicole Noname",
+        aboutTitle: "Administrative Assistant",
+        aboutDesc: "Hello again again",
+        aboutContact: [
+            {
+                email: "",
+                phone: "",
+            }
+        ],
+        aboutId: "Joseph"
+    },
+    {
+        aboutImg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPuaXCGM6j0prMgZ41hMkH0hAnKA_6Qzq06w&usqp=CAU",
         aboutName:"Joseph Palatnik",
         aboutTitle: "Administrative Assistant",
         aboutDesc: "Hello again again",

@@ -34,8 +34,8 @@
 } 
 
   .carousel__dot {
-    width: 2rem;
-    height: 2rem;
+    width: 1px;
+    height: 1px;
     margin: 15px;
     padding: 10px;
     border-radius: 50%;

@@ -21,7 +21,7 @@ const About = () => {
           naturalSlideWidth={100}
           naturalSlideHeight={125}
           isIntrinsicHeight={true}
-          totalSlides={3}
+          totalSlides={4}
         >
             <Slider>
               {aboutItems.map((item, i) => {
