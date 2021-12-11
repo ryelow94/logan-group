@@ -21,9 +21,9 @@ const Home = () => {
         <p>
           We custom tailor investment portfolios to suit individuals as well as handle
           corporate financial objectives. This independence allows us to focus on
-          your individual situation, rather than on a specific company's products. We
+          your individual situation, rather than on a specific company's products. Moreover, we
           represent companies and finanical products with long-term, proven
-          track records. Our emphasis is always on what is best for our clients,
+          track records. That said, our emphasis is always on what is best for our clients,
           not the investment companies.
         </p>
         <p>
