@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import Home from "./components/Home.js"
 import About from "./components/About/About.js"
 import Navbar from "./components/Navbar/Navbar";
 import Services from "./components/Services/Services.js"
@@ -14,6 +15,9 @@ const App = () => {
       <Navbar />
       <main>
         <Switch>
+          <Route exact path ="/">
+            <Home/>
+          </Route>
         <Route exact path="/about-us">
             <About/>
           </Route>
