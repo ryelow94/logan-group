@@ -15,6 +15,9 @@ const App = () => {
       <Navbar />
       <main>
         <Switch>
+          <Route exact path ="/logan-group">
+            <Home/>
+          </Route>
           <Route exact path ="/">
             <Home/>
           </Route>
