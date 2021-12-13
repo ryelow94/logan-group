@@ -10,6 +10,7 @@
 }
 
 p{
+    align-items: flex-start;
     padding: 10px;
     margin:1%;
     text-align: center;
@@ -34,7 +35,9 @@ img{
     width:600px;
     margin-left:25%;
     margin: auto;
-    margin-top:20px
+    margin-top:20px;
+    margin-left: 20PX;
+    margin-bottom: 20px;
 }
 @media screen and (max-width:768px) {
     iframe{
@@ -51,4 +54,12 @@ img{
         width:200px
     }
     
+}
+@media screen and (min-width:768px){
+.home-container {
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+}
 }
