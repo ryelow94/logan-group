@@ -1,14 +1,6 @@
 import React from "react";
 import "./Home.css";
 import { useEffect, useState } from "react";
-import {
-  CarouselProvider,
-  Slider,
-  Slide,
-  DotGroup,
-  ButtonBack,
-  ButtonNext,
-} from "pure-react-carousel";
 
 const Home = () => {
     return(

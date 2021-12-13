@@ -3,12 +3,27 @@
   margin-bottom:1rem;
   text-align:center;
 }
+.services-text{
+  margin: 1%;
+  padding:1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+}
 .cards{
   display:flex;
   align-items:center;
   justify-content:space-around;
   flex-direction: row;
   flex-wrap: wrap;
+  font-size: larger;
+}
+@media screen and (max-width:768px){
+  #retire,#pension,#college,#estate{
+    padding:2px;
+  }
 }
 .service-item{
   text-align:center;
@@ -23,6 +38,7 @@
 }
 .description{ 
   text-align:center;
+  padding:5%
 }
 .button-div{
   display: flex;

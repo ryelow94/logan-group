@@ -117,6 +117,18 @@ const Services = () => {
   return (
     <div>
       <h1 id="services-header">Services</h1>
+      <p className="services-text">
+      Whether it's next month's income or a financial goal that's still decades away, your financial future depends on the decisions you make today.
+      </p>
+<p>
+The Logan Group Securities begins with a detailed analysis of your financial resources, needs and goals. Throughout the financial planning process, we will answer your many important financial questions.
+</p>
+<p>
+The process of financial planning allows you to discover the direction that is right for you. The Logan Group Securities will help you plan and implement a program that is specifically designed for your financial future.
+</p>
+<p>
+The Logan Group Securities believes the ability to diversify a portfolio among a wide variety of investment tools is essential. Therefore, we represent many of the finest nationally recognized mutual funds and insurance companies. This allows us to provide appropriate investment vehicles for your needs. The Logan Group Securities provides these services to assist in the completion of your total financial plan.
+      </p>
       <div className="cards">
         {ServiceItems.map((item, index) => {
           return (
@@ -128,10 +140,10 @@ const Services = () => {
                {showDesTitle4 ?<h4 id={item.id} onClick={(e) => handleServiceClick(e)}>{item.title4}</h4>: null}
               </>
               <div className="description-div">
-                {showDescription1 ?<h5 className="description"> {item.description1}</h5> : null}
-                {showDescription2 ?<h5 className="description"> {item.description2}</h5>: null}
-                {showDescription3 ?<h5 className="description"> {item.description3}</h5> : null}
-                {showDescription4 ?<h5 className="description"> {item.description4}</h5>: null}
+                {showDescription1 ?<p className="description"> {item.description1}</p> : null}
+                {showDescription2 ?<p className="description"> {item.description2}</p>: null}
+                {showDescription3 ?<p className="description"> {item.description3}</p> : null}
+                {showDescription4 ?<p className="description"> {item.description4}</p>: null}
                 </div>
                 {item.tsafaq ? (
                   <div>
@@ -150,9 +162,7 @@ const Services = () => {
                             return (
                               <div key={index} className="faq">
                                 <p>{item.Q}</p>
-                                <br></br>
                                 <p>{item.A}</p>
-                                <br></br>
                               </div>
                             );
                           })}

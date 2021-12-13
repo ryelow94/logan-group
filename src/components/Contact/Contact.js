@@ -83,7 +83,7 @@ function ContactForm() {
           <textarea type="text" id="message" name="message" value={formik.values.message} onChange={formik.handleChange} />
           {formik.errors.subject ||formik.errors.name || formik.errors.email || formik.errors.message ? <div className="required-field"> All required fields must be entered before submitting</div> : null}
           <br></br>
-          <input type="submit" onclick={formik.handleClick} />
+          <input type="submit" onClick={formik.handleClick} />
         </div>
       </form>
       <br></br>
