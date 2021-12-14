@@ -16,6 +16,7 @@ const Services = () => {
   const [showDescription3, setShowDescription3] = useState(false);
   const [showDescription4, setShowDescription4] = useState(false);
   const [ back, isBack] = useState(false)
+  const [ removeInfo, setRemoveInfo] = useState(false)
   const handleFaq = () => {
     if (faqClicked === false) {
       setFaqClicked(true);
@@ -24,6 +25,7 @@ const Services = () => {
     }
   };
   const handleClose= () => {
+    setRemoveInfo(false);
     setShowDesTitle1(true)
     setShowDesTitle2(true)
     setShowDesTitle3(true)
@@ -41,6 +43,7 @@ const Services = () => {
   }
   const handleServiceClick = (e) => {
     console.log(e.target);
+    setRemoveInfo(true)
     isBack(true)
     if (e.target.id === "retire") {
       setShowFaq(true);
@@ -162,7 +165,7 @@ const Services = () => {
           );
         })}
       </div>
-      <p className="services-text">
+      {!removeInfo? <><p className="services-text">
       Whether it's next month's income or a financial goal that's still decades away, your financial future depends on the decisions you make today.
       </p>
 <p>
@@ -173,7 +176,7 @@ The process of financial planning allows you to discover the direction that is r
 </p>
 <p>
 The Logan Group Securities believes the ability to diversify a portfolio among a wide variety of investment tools is essential. Therefore, we represent many of the finest nationally recognized mutual funds and insurance companies. This allows us to provide appropriate investment vehicles for your needs. The Logan Group Securities provides these services to assist in the completion of your total financial plan.
-      </p>
+      </p></>: null}
       <br></br>
       <div className="close-button-div">
       {back?<button className="close-button" onClick={handleClose}> close</button>: null}
