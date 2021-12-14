@@ -1,10 +1,14 @@
 
+.home-container{
+    padding: 25px
+}
 @media screen and (max-width:768px) {
     p{
         font-size:15px;
         padding: 10px;
         margin:1%;
         text-align: center;
+        font-size: 20px;
 
     }
 }
@@ -27,6 +31,7 @@ iframe{
     padding: 10px
    
 }
+
 img{
     display:flex;
     align-items: center;
@@ -35,9 +40,8 @@ img{
     width:600px;
     margin-left:25%;
     margin: auto;
-    margin-top:20px;
-    margin-left: 20PX;
-    margin-bottom: 20px;
+  margin-top:20px;
+  
 }
 @media screen and (max-width:768px) {
     iframe{
@@ -50,8 +54,11 @@ img{
         height:fit-content
     }
     img{
-        height:200px;
-        width:200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:300px;
+        width:300px;
     }
     
 }
