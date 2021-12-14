@@ -44,6 +44,9 @@ const Services = () => {
   const handleServiceClick = (e) => {
     console.log(e.target);
     setRemoveInfo(true)
+    if(removeInfo===true){
+      setRemoveInfo(false)
+    }
     isBack(true)
     if (e.target.id === "retire") {
       setShowFaq(true);
