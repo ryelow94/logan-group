@@ -1,11 +1,11 @@
 .footer {
   margin-top: 1rem;
   padding: 1rem;
-  /* background: linear-gradient(
+  background: linear-gradient(
     90deg,
     rgb(110, 94, 254) 0%,
-    rgba(73, 63, 252, 1) 100% );*/
-    background-color: grey;
+    rgba(73, 63, 252, 1) 100%
+  );
   bottom: 0;
   left: 0;
   width: 100%;
@@ -23,7 +23,7 @@
 }
 
 .footer-link:hover {
-  background-color: #D3D3D3;
+  background-color: #d3d3d3;
   border-radius: 4px;
   transition: all 0.2s ease-out;
 }
