@@ -25,9 +25,16 @@
     padding:2px;
   }
 }
-.service-item{
+#retire, #estate, #college, #pension{
   text-align:center;
   cursor: pointer;
+  color:rgb(110,94,254) 
+}
+#retire:hover, #estate:hover, #college:hover, #pension:hover{
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
+  font-size:larger;
+  color:rgb(45, 34, 250) 
 }
 .description-div{
   display:flex;

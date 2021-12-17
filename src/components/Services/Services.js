@@ -151,7 +151,7 @@ const Services = () => {
                       </button>
                       </div>
                     {faqClicked ? (
-                        <h5>
+                        <div>
                           {Faq.map((item, index) => {
                             return (
                               <div key={index} className="faq">
@@ -160,7 +160,7 @@ const Services = () => {
                               </div>
                             );
                           })}
-                        </h5>
+                        </div>
                     ) : null}
                   </div>
                 ) : null}
