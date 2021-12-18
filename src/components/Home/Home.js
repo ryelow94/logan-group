@@ -7,7 +7,7 @@ const Home = () => {
       <div>
         <div className="home-container">
         <img src="https://images.crexi.com/assets/561082/9856a247400c45ef9c85eeb95454b519_716x444.jpg"/>
-        <p>
+        <p className="main-text">
           The Logan Group Securities is a registered Broker/Dealer specializing
           in retirement planning for Educators. We offer a wide variety of
           investments to help meet your financial objectives.
