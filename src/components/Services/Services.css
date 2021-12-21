@@ -29,7 +29,7 @@
 #retire, #estate, #college, #pension{
   text-align:center;
   cursor: pointer;
-  color:rgb(110,94,254) 
+  color:rgb(110,94,254);
 }
 #retire:hover, #estate:hover, #college:hover, #pension:hover{
   border-radius: 4px;

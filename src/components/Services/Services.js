@@ -26,6 +26,10 @@ const Services = () => {
     }
   };
   const handleClose = () => {
+    window.scrollTo({
+      top: 0, 
+      behavior: 'auto'
+    });
     setRemoveInfo(false);
     setShowDesTitle1(true);
     setShowDesTitle2(true);
@@ -46,9 +50,9 @@ const Services = () => {
     if (removeInfo === true) {
       setRemoveInfo(false);
     }
-    if(removeInfo === false){
-      setRemoveInfo(true)
-    };
+    if (removeInfo === false) {
+      setRemoveInfo(true);
+    }
     isBack(true);
     if (e.target.id === "retire") {
       setShowFaq(true);
@@ -130,43 +134,23 @@ const Services = () => {
           return (
             <div key={index} className={item.cName}>
               <>
-                {showDesTitle1 ? (
-                  <h4 id={item.id} onClick={(e) => handleServiceClick(e)}>
-                    {item.title1}
-                  </h4>
-                ) : null}
-                {showDesTitle2 ? (
-                  <h4 id={item.id} onClick={(e) => handleServiceClick(e)}>
-                    {item.title2}
-                  </h4>
-                ) : null}
-                {showDesTitle3 ? (
-                  <h4 id={item.id} onClick={(e) => handleServiceClick(e)}>
-                    {item.title3}
-                  </h4>
-                ) : null}
-                {showDesTitle4 ? (
-                  <h4 id={item.id} onClick={(e) => handleServiceClick(e)}>
-                    {item.title4}
-                  </h4>
-                ) : null}
+                <h4 id={item.id} onClick={(e) => handleServiceClick(e)}>
+                  {showDesTitle1 ? item.title1 : null}
+                  {showDesTitle2 ? item.title2 : null}
+                  {showDesTitle3 ? item.title3 : null}
+                  {showDesTitle4 ? item.title4 : null}
+                </h4>
               </>
               <div className="description-div">
-                {showDescription1 ? (
-                  <p className="description"> {item.description1}</p>
-                ) : null}
-                {showDescription2 ? (
-                  <p className="description"> {item.description2}</p>
-                ) : null}
-                {showDescription3 ? (
-                  <p className="description"> {item.description3}</p>
-                ) : null}
-                {showDescription4 ? (
-                  <p className="description"> {item.description4}</p>
-                ) : null}
+                <p className="description">
+                  {showDescription1 ? item.description1 : null}
+                  {showDescription2 ? item.description2 : null}
+                  {showDescription3 ? item.description3 : null}
+                  {showDescription4 ? item.description4 : null}
+                </p>
               </div>
               {item.tsafaq ? (
-                <div>
+                <>
                   <div className="button-div">
                     <button
                       style={{ display: showFaq ? "block" : "none" }}
@@ -177,7 +161,7 @@ const Services = () => {
                     </button>
                   </div>
                   {faqClicked ? (
-                    <div>
+                    <>
                       {Faq.map((item, index) => {
                         return (
                           <div key={index} className="faq">
@@ -186,9 +170,9 @@ const Services = () => {
                           </div>
                         );
                       })}
-                    </div>
+                    </>
                   ) : null}
-                </div>
+                </>
               ) : null}
             </div>
           );
@@ -197,7 +181,6 @@ const Services = () => {
       <div className="close-button-div">
         {back ? (
           <button className="close-button" onClick={handleClose}>
-            {" "}
             close
           </button>
         ) : null}
@@ -235,17 +218,17 @@ const Services = () => {
       <br></br>
       <h2 className="center">Complimentary Services:</h2>
       {compServ.map((item, index) => {
-        return <>
-        <p key={index}>{item.service}</p>
-        </>;
+        return (
+          <div key={index}>
+            <p>{item.service}</p>
+          </div>
+        );
       })}
       <h2 className="center">Already Investing? </h2>
-
       <p>
         The Logan Group Securities will perform comparative rate evaluations on
         your existing accounts and portfolios.
       </p>
-      
     </div>
   );
 };
