@@ -192,19 +192,19 @@ const Services = () => {
             decades away, your financial future depends on the decisions you
             make today.
           </p>
-          <p>
+          <p className="services-text">
             The Logan Group Securities begins with a detailed analysis of your
             financial resources, needs and goals. Throughout the financial
             planning process, we will answer your many important financial
             questions.
           </p>
-          <p>
+          <p className="services-text">
             The process of financial planning allows you to discover the
             direction that is right for you. The Logan Group Securities will
             help you plan and implement a program that is specifically designed
             for your financial future.
           </p>
-          <p>
+          <p className="services-text">
             The Logan Group Securities believes the ability to diversify a
             portfolio among a wide variety of investment tools is essential.
             Therefore, we represent many of the finest nationally recognized
